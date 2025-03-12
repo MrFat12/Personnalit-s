@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
 
-<body>
+<body class="bg-sky-300">
     <header>
         <h1 class="p-5 bg-green-700 text-3xl font-bold text-amber-950 text-center">
             Quel joueurs de minecraft est-tu ?
@@ -16,7 +17,27 @@
     <main>
 
         <p class="text-center font-mono text-2xl y-4 py-6">{{questions}}</p>
-        <ul>
+        <ul class="grid gap-50px">
+            <li>
+                <div class="bg-green-300 rounded-full onclick="window.location.href=/question>
+                    <h4 class="text-center text-gray-800 font-bold">A</h4>
+                </div>
+            </li>
+            <li>
+                <div class="bg-green-300 rounded-full">
+                    <h4 class="text-center text-gray-800 font-bold">B</h4>
+                </div>
+            </li>
+            <li>
+                <div class="bg-green-300 rounded-full">
+                    <h4 class="text-center text-gray-800 font-bold">C</h4>
+                </div>
+            </li>
+            <li>
+                <div class="bg-green-300 rounded-full">
+                    <h4 class="text-center text-gray-800 font-bold">D</h4>
+                </div>
+            </li>
             <li><a href="/reponse/0">{{reponses[0]}}</a></li>
             <li><a href="/reponse/1">{{reponses[1]}}</a></li>
             <li><a href="/reponse/2">{{reponses[2]}}</a></li>
